@@ -1,0 +1,11 @@
+<h1>Mygame#game</h1>
+<p>Find me in app/views/mygame/game.html.erb</p>
+
+<p><%= @new_grid %></p>
+
+
+<form action="score" method="get">
+  <input type="text" name"attempt" placeholder="my attempt" autofocus/>
+  <input type="hidden" name="grille" value="<%= @new_grid.join().split() %>"/>
+  <input type="submit" value="Go !"/>
+</form>
